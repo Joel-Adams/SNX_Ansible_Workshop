@@ -253,7 +253,6 @@ resource "azurerm_virtual_machine" "tower-node" {
     os_profile {
         computer_name  = "{{ workshop_prefix }}-tower-${count.index}"
         admin_username = "azure-user"
-#	admin_password = "RedHat2018!"
     }
     os_profile_linux_config {
         disable_password_authentication = true
@@ -290,7 +289,6 @@ resource "azurerm_virtual_machine" "node" {
     os_profile {
         computer_name  = "{{ workshop_prefix }}-node-${count.index}"
         admin_username = "azure-user"
-#	admin_password = "RedHat2018!"
     }
     os_profile_linux_config {
         disable_password_authentication = true
