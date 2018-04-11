@@ -75,9 +75,14 @@ azure_tenant_id:		              ""
 ```
 
 ## Configure Workshop Nodes
+To call terraform to provision the nodes run the first playbook.
 
 ```
 ansible-playbook 1_provision.yml
+```
+To install and configure the necessary software, on the newly created nodes, run the second playbook. It may be re-run as many times as necessary.
+
+```
 ansible-playbook 2_load.yml -K
 ```
 
@@ -88,8 +93,6 @@ ansible-playbook 3_unregister.yml # only need to run this if you aren't using Cl
 cd .redhatgov
 terraform destroy
 ```
-
-To install and configure the necessary software, on the newly created nodes, run the second playbook.  It may be re-run as many times as necessary.
 
 ```
 ```
