@@ -80,7 +80,7 @@ To call terraform to provision the nodes run the first playbook.
 ```
 ansible-playbook 1_provision.yml
 ```
-To install and configure the necessary software, on the newly created nodes, run the second playbook. It may be re-run as many times as necessary. The SUDO password is defined in '/group_vars/all' workshop_password:. 
+To install and configure the necessary software, on the newly created nodes, run the second playbook. It may be re-run as many times as necessary. The SUDO password is defined in (workshop_password:) located in `group_vars/all`. 
 
 ```
 ansible-playbook 2_load.yml -K
