@@ -17,10 +17,10 @@ workshop_prefix:                  "tower"
 # azure.infra                |    .terraform working dir
 terraform_working_dir:            "{{ lookup('env','PWD') }}/.redhatgov"
 # azure.infra                |    AZURE KEYS
-azure_subscription_id:            ""
-azure_client_id:                  ""
-azure_client_secret:		          ""
-azure_tenant_id:		              ""
+azure_subscription_id:            ""    #id
+azure_client_id:                  ""    #appID
+azure_client_secret:		          ""    #password
+azure_tenant_id:		              ""    #tenant
 # azure.infra                |    AZURE DNS
 domain_name:                      ""
 # azure.infra                |    AZURE Terraform Vars
