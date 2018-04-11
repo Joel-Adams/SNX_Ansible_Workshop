@@ -56,7 +56,7 @@ wget https://releases.hashicorp.com/terraform/0.9.11/terraform_0.9.11_linux_amd6
 sudo unzip terraform_0.9.11_linux_amd64.zip -d /usr/local/bin terraform
 ```
 
-Then edit `group_vars/all` and fill in the vars with your Azure api info. This role can also provide easy domain name mapping to all the instances if you have a domain registered in Azure.
+First, copy group_vars/all_example to group_vars/all, and then edit `group_vars/all` and fill in the vars with your Azure api info. This role can also provide easy domain name mapping to all the instances if you have a domain registered in Azure. You can also update the number of tower instances to be created and the number of node instances to be created.
 
 
 ```
@@ -74,6 +74,8 @@ azure_client_secret:		          ""
 azure_tenant_id:		              ""
 ```
 
+## Configure Workshop Nodes
+
 ```
 ansible-playbook 1_provision.yml
 ansible-playbook 2_load.yml -K
@@ -86,8 +88,6 @@ ansible-playbook 3_unregister.yml # only need to run this if you aren't using Cl
 cd .redhatgov
 terraform destroy
 ```
-
-## Configure Workshop Nodes
 
 To install and configure the necessary software, on the newly created nodes, run the second playbook.  It may be re-run as many times as necessary.
 
