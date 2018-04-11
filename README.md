@@ -80,7 +80,7 @@ To call terraform to provision the nodes run the first playbook.
 ```
 ansible-playbook 1_provision.yml
 ```
-To install and configure the necessary software, on the newly created nodes, run the second playbook. It may be re-run as many times as necessary. The SUDO password is defined in (workshop_password:) located in `group_vars/all`. 
+To install and configure the necessary software, on the newly created nodes, run the second playbook. It may be re-run as many times as necessary. The SUDO password is your local sudo password.
 
 ```
 ansible-playbook 2_load.yml -K
@@ -108,6 +108,10 @@ https://{{ workshop_prefix }}-tower0.{{ region }}.cloudapp.azure.com:8888/wetty/
 ![Tower Login](img/ansible-tower.png)
 
 There is a web-based IDE running on port 8443 of each tower node.  That IDE can be used to edit Ansible playbooks, rather than using a command line editor, like `vim` or `nano`.
+
+```
+https://{{ workshop_prefix }}-tower0.{{ region }}.cloudapp.azure.com:8443
+```
 
 ![Codiad Login](img/codiad.png)
 
