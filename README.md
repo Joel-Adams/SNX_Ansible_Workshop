@@ -51,7 +51,7 @@ sudo unzip terraform_0.9.11_linux_amd64.zip -d /usr/local/bin terraform
 
 **** Fedora 25/26
 ```
-sudo dnf -y install python2-boto ansible
+sudo dnf -y install python2-boto ansible libselinux-python
 wget https://releases.hashicorp.com/terraform/0.9.11/terraform_0.9.11_linux_amd64.zip # current release as of this date...check to see if a newer version is availabke
 sudo unzip terraform_0.9.11_linux_amd64.zip -d /usr/local/bin terraform
 ```
