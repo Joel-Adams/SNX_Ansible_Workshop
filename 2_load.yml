@@ -2,7 +2,7 @@
 ---
 # https://www.terraform.io/docs/providers/aws/index.html
 
-- name: Wait for Azure VM's to become initialized
+- name: Wait for Azure Virtual Machines to become initialized
   hosts: localhost
   tasks:
     - wait_for:
@@ -15,7 +15,7 @@
 - name: Configure repositories on all nodes
   become: yes
   remote_user: azure-user
-  hosts: all_nodes
+  hosts: tower_nodes
   roles:
     - { role: subscription_manager }
     - { role: epel }
