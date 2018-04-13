@@ -364,7 +364,7 @@ def openstack_host(resource, module_name):
     return name, attrs, groups
 
 
-@parses('aws_instance')
+@parses('azure_instance')
 @calculate_mantl_vars
 def aws_host(resource, module_name):
     name = resource['primary']['attributes']['tags.Name']

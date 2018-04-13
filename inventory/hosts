@@ -5,11 +5,11 @@ ansible_become=yes
 localhost  ansible_connection=local  ansible_python_interpreter='/usr/bin/env python'
 
 [tower_nodes]
-ChangeMe.tower.[0:2].redhatgov.io
+jsa-tower[0:0].eastus.cloudapp.azure.com
 
 [nodes]
-ChangeMe.node.[0:4].redhatgov.io
+jsa-node[0:0].eastus.cloudapp.azure.com
 
 [all_nodes]
-ChangeMe.tower.[0:2].redhatgov.io
-ChangeMe.node.[0:4].redhatgov.io
+jsa-tower[0:0].eastus.cloudapp.azure.com
+jsa-node[0:0].eastus.cloudapp.azure.com

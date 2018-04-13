@@ -1,8 +1,8 @@
 # file: 2_load.yml
 ---
-# https://www.terraform.io/docs/providers/aws/index.html
+# https://www.terraform.io/docs/providers/azurerm
 
-- name: Wait for Azure Virtual Machines to become initialized
+- name: Wait for Azure VM's to become initialized
   hosts: localhost
   tasks:
     - wait_for:

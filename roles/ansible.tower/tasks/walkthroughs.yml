@@ -19,7 +19,7 @@
 - name: create templates for each host
   local_action:
     template src="{{ item.src }}" dest="/tmp/{{ inventory_hostname }}/{{ item.dest }}"
-  with_items:
+  with_items: 
     - { src: "exercise1.0-0.sh.j2", dest: "exercise1.0-0.sh" }
     - { src: "exercise1.0-1.sh.j2", dest: "exercise1.0-1.sh" }
     - { src: "exercise1.0-2.sh.j2", dest: "exercise1.0-2.sh" }
