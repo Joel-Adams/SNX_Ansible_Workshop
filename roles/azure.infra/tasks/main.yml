@@ -37,7 +37,7 @@
     - id_rsa.pub
 
 - name: ensure SSH key is generated
-  command: ssh-keygen -b 4096 -t rsa -f ~/.ssh/ansible/id_rsa -N ''
+  command: ssh-keygen -b 2048 -t rsa -f ~/.ssh/ansible/id_rsa -N ''
   register: azure_key
   args:
     creates: ~/.ssh/asnible/id_rsa
