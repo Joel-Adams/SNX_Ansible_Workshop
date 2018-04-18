@@ -7,7 +7,7 @@
 #######################################################################################
 
 # Ensure that the name does not include special characters such as underscores, etc.
-workshop_prefix:                  "tower"
+workshop_prefix:                  "tower"   # All_lower_case
 
 
 
@@ -19,8 +19,8 @@ terraform_working_dir:            "{{ lookup('env','PWD') }}/.redhatgov"
 # azure.infra                |    AZURE KEYS
 azure_subscription_id:            ""
 azure_client_id:                  ""
-azure_client_secret:		          ""
-azure_tenant_id:		              ""
+azure_client_secret:		  ""
+azure_tenant_id:		  ""
 # azure.infra                |    AZURE DNS
 domain_name:                      ""
 # azure.infra                |    AZURE Terraform Vars
