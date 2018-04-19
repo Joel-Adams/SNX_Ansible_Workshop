@@ -301,7 +301,7 @@ resource "azurerm_virtual_machine" "node" {
 #        offer     = "RHEL"
 #        sku       = "7.3"
 #        version   = "latest"
-    }
+#    }
     os_profile {
         computer_name  = "{{ workshop_prefix }}-node-${count.index}"
         admin_username = "azure-user"
