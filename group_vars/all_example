@@ -10,8 +10,7 @@
 workshop_prefix:                  "tower"   # All_lower_case
 
 
-
-#######################################################################################
+######################################################################################
 # ANSIBLE ROLE KEY         |      VALUE
 #######################################################################################
 # azure.infra                |    .terraform working dir
@@ -28,7 +27,8 @@ number_tower_nodes:               "1"            # Tower Nodes
 number_nodes:                     "1"            # Student Nodes
 tower_instance_type:              "Standard_DS1_V2"    # Tower Instance Size
 node_instance_type:               "Standard_B1MS"     # Student Instance Size
-region:                           "eastus"    # AZURE Region
+region:                           "eastus"    # Azure Region
+azure_image_id:                   ""    # Azure ID of custom image
 #--------------------------------------------------------------------------------------
 # subscription_manager     |      Red Hat Subscription via Cloud Access
 cloud_access:                      true
